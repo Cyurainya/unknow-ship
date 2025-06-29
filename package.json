@@ -9,17 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@tailwindcss/postcss": "^4.1.11",
+    "framer-motion": "^12.19.2",
+    "i18next": "^25.2.1",
+    "less": "^4.3.0",
+    "less-loader": "^12.3.0",
+    "next": "15.3.4",
+    "next-i18next": "^15.4.2",
+    "next-with-less": "^3.0.1",
+    "postcss": "^8.5.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "react-globe.gl": "^2.34.0",
+    "react-i18next": "^15.5.3",
+    "swiper": "^11.2.10",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
