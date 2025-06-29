@@ -41,7 +41,7 @@ export default function RocketScroll() {
     { src: Earth, name: 'Earth' },
     { src: Mars, name: 'Mars' },
     { src: Jupiter, name: 'Jupiter' },
-    { src: Saturn, name: 'JupitSaturner' },
+    { src: Saturn, name: 'Saturn' },
     { src: Uranus, name: 'Uranus' },
     { src: Neptune, name: 'Neptune' },
     { src: Pluto, name: 'Pluto' },
