@@ -82,24 +82,25 @@ export default function RocketScroll() {
 
 
         </div>
-        <p className='text-base absolute top-[60vh] ml-10 text-white-200 w-fit p-1 border border-white'>Scroll the page to launch the rocket</p>
+        <p className='text-base absolute top-[60vh] ml-10 text-white w-fit p-1 border border-white'>Scroll the page to launch the rocket</p>
         <div
           className="fixed bottom-0 left-1/2 transform -translate-x-1/2 z-10 transition-transform duration-100"
           style={{
             transform: `translate(-50%, ${rocketY}vh)`,
           }}
         >
-          <Image src={rocket.src} alt="Rocket" className="w-32" />
+          <Image src={rocket.src} alt="Rocket"   width={100}
+      height={100} />
         </div>
       </div>
 
       {/* 下一个纯色区 */}
-      <div className="w-full h-[100dvh] relative">
-        <div className='text-white w-full z-1  absolute text-4xl h-[20dvh] flex justify-center items-center'>
+      <div className="w-full h-[100dvh] relative bg-black">
+        <div className='w-full z-1  absolute text-4xl h-[20dvh] flex justify-center items-center text-white '>
           We pioneer sustainable propulsion systems
 
         </div>
-        <p className='text-sm border  border-white z-1 absolute top-[80vh] left-[45vw] p-[10px] cursor-pointer' onClick={toThirdPanel}> ↓ To the next panel</p>
+        <p className='text-sm border  border-white z-1 absolute top-[80vh] left-[45vw] p-[10px] hover:bg-red text-white cursor-pointer' onClick={toThirdPanel}> ↓ To the next panel</p>
         <div>
 
           <Globe
@@ -119,9 +120,9 @@ export default function RocketScroll() {
         </div>
 
         {/* 右侧四个box */}
-        <div className="w-1/2 grid grid-cols-2 grid-rows-2 gap-6 p-6">
+        <div className="w-1/2 grid grid-cols-2 grid-rows-2 gap-10 p-6">
 
-          <div className="bg-gradient-to-br  from-blue-700 h-[45dvh] to-purple-800 p-4 rounded-lg shadow-lg hover:scale-105 transition">
+          <div className="bg-gradient-to-br  from-blue-700 to-purple-800 p-4 rounded-lg shadow-lg hover:scale-105 transition">
             <Image src={pet} alt="Service 1" className="w-full  object-cover rounded" />
             <p className="mt-4 text-center font-bold">pet transportation</p>
           </div>
